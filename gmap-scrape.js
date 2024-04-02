@@ -3,6 +3,8 @@ import puppeteerExtra from 'puppeteer-extra'
 import stealthPlugin from 'puppeteer-extra-plugin-stealth'
 import fs from 'fs';
 
+const query = "restoran dan cofee shop di magelang";
+
 async function searchGoogleMaps() {
   try {
     const start = Date.now();
@@ -26,7 +28,7 @@ async function searchGoogleMaps() {
 
     const page = await browser.newPage();
 
-    const query = "Coffe Shop Magelang";
+    
 
     try {
       await page.goto(
